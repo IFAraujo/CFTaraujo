@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <style>
+            h1 {
+                background-color: #486;
+            }
+        </style>
+        <script>
+            function soma(){
+                let a = document.getElementById("a");
+                let b = document.getElementById("b");
+                let resultado = document.getElementById("resultado");
+              
+                let va = parseInt(a.value);
+                let vb = parseInt(b.value);
+                let vr = va+vb;
+              
+                resultado.textContent = vr;
+            }
+            function subtracao(){
+                let a = document.getElementById("a");
+                let b = document.getElementById("b");
+                let resultado = document.getElementById("resultado");
+              
+                let va = parseInt(a.value);
+                let vb = parseInt(b.value);
+                let vr = va-vb;
+              
+                resultado.textContent = vr;
+            }
+            function multiplicacao()
+            {
+              let a = document.getElementById("a");
+              let b = document.getElementById("b");
+              let resultado = document.getElementById("resultado");
+              
+              let va = parseInt(a.value);
+              let vb = parseInt(b.value);
+              let vr = va*vb;
+              
+              resultado.textContent = vr;
+            }
+            function divisao()
+            {
+              let a = document.getElementById("a");
+              let b = document.getElementById("b");
+              let resultado = document.getElementById("resultado");
+              
+              let va = parseInt(a.value);
+              let vb = parseInt(b.value);
+              let vr = va/vb;
+              
+              resultado.textContent = vr;
+            }
+            function elevar2()
+            {
+              let c = document.getElementById("c");
+              let resultado = document.getElementById("resultado");
+              
+              let vc = parseInt(c.value);
+              let vb = parseInt(c.value);
+              let vr = vc*vb;
+              
+              resultado.textContent = vr;
+            }
+            function raiz()
+            {
+              let c = document.getElementById("c");
+              let resultado = document.getElementById("resultado");
+              
+              let vc = parseInt(c.value);
+              let vr = vc**(1/2);
+              
+              resultado.textContent = vr;
+            }
+            </script>
+    </head>
+    <body>
+        <h1>Calculadora</h1>
+        <p><b>A: <input type="text" id="a"> <button onclick="soma()">+</button> <button onclick="subtracao()">-</button>
+        <button onclick="multiplicacao()">*</button>
+        <button onclick="divisao()">/</button> B: <input type="text" id="b"></p>
+
+        <p><br><b>C: <input type="text" id="c"> <button onclick="raiz()">√</button> <button onclick="elevar2()">^2</button></p>
+
+        <p>Resultado: <span id="resultado">???</span></p>
+
+    </body>
+</html>
